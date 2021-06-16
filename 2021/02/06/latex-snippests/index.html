@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+
+
+
+
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="preconnect" href="//www.googletagmanager.com">
+	<link rel="preconnect" href="//zz.bdstatic.com">
+	<link rel="preconnect" href="//sp0.baidu.com">
+	<link rel="preconnect" href="//www.google-analytics.com">
+	<link rel="preconnect" href="//cdn1.lncld.net">
+	<link rel="preconnect" href="//unpkg.com">
+	<link rel="preconnect" href="//app-router.leancloud.cn">
+	<link rel="preconnect" href="//9qpuwspm.api.lncld.net">
+	<link rel="preconnect" href="//gravatar.loli.net">
+
+	<title>Vscode配置LaTeX代码片段 | Levitate_</title>
+
+	<meta name="HandheldFriendly" content="True">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+	<meta name="generator" content="hexo">
+	<meta name="author" content="Levitate_">
+	<meta name="description" content>
+
+	
+	<meta name="keywords" content="代码片段">
+	
+
+	
+	<link rel="shortcut icon" href="https://s1.ax1x.com/2020/08/09/a7yVTx.png">
+	<link rel="apple-touch-icon" href="https://s1.ax1x.com/2020/08/09/a7yVTx.png">
+	
+
+	
+	<meta name="theme-color" content="#3c484e">
+	<meta name="msapplication-TileColor" content="#3c484e">
+	
+
+	
+
+	
+	<link rel="alternate" href="/atom.xml" title="Levitate_">
+	
+
+	<meta property="og:site_name" content="Levitate_">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Vscode配置LaTeX代码片段 | Levitate_">
+	<meta property="og:description" content>
+	<meta property="og:url" content="http://yoursite.com/2021/02/06/latex-snippests/">
+
+	
+	<meta property="article:published_time" content="2021-02-06T11:02:00+08:00"> 
+	<meta property="article:author" content="Levitate_">
+	<meta property="article:published_first" content="Levitate_, /2021/02/06/latex-snippests/">
+	
+
+	
+	
+	
+<link rel="stylesheet" href="/css/allinonecss.min.css">
+
+
+	
+	
+	
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" rel="stylesheet" type="text/css">
+<link rel="alternate" href="/atom.xml" title="Levitate_" type="application/atom+xml">
+</head>
+<body class="post-template">
+	<div class="site-wrapper">
+		
+
+
+
+
+<header class="site-header post-site-header outer">
+    <div class="inner">
+        
+<nav class="site-nav"> 
+    <div class="site-nav-left">
+        <ul class="nav">
+            <li>
+                
+                <a href="/" title="Home">HOME</a>
+                
+            </li>
+            
+            
+            <li>
+                <a href="/about" title="ABOUT">ABOUT</a>
+            </li>
+            
+            <li>
+                <a href="/details" title="DETAILS">DETAILS</a>
+            </li>
+            
+            <li>
+                <a href="/archives" title="ARCHIVES">ARCHIVES</a>
+            </li>
+            
+            
+        </ul> 
+    </div>
+    
+    <div class="search-button-area">
+        <a href="#search" class="search-button">Search ...</a>
+    </div>
+     
+    <div class="site-nav-right">
+        
+        <a href="#search" class="search-button">Search ...</a>
+         
+        
+<div class="social-links">
+    
+    
+    <a class="social-link" title="github" href="https://github.com/Levitate-Qian/" target="_blank" rel="noopener">
+        <svg viewbox="0 0 1049 1024" xmlns="http://www.w3.org/2000/svg"><path d="M524.979332 0C234.676191 0 0 234.676191 0 524.979332c0 232.068678 150.366597 428.501342 358.967656 498.035028 26.075132 5.215026 35.636014-11.299224 35.636014-25.205961 0-12.168395-0.869171-53.888607-0.869171-97.347161-146.020741 31.290159-176.441729-62.580318-176.441729-62.580318-23.467619-60.841976-58.234462-76.487055-58.234463-76.487055-47.804409-32.15933 3.476684-32.15933 3.476685-32.15933 53.019436 3.476684 80.83291 53.888607 80.83291 53.888607 46.935238 79.963739 122.553122 57.365291 152.97411 43.458554 4.345855-33.897672 18.252593-57.365291 33.028501-70.402857-116.468925-12.168395-239.022047-57.365291-239.022047-259.012982 0-57.365291 20.860106-104.300529 53.888607-140.805715-5.215026-13.037566-23.467619-66.926173 5.215027-139.067372 0 0 44.327725-13.906737 144.282399 53.888607 41.720212-11.299224 86.917108-17.383422 131.244833-17.383422s89.524621 6.084198 131.244833 17.383422C756.178839 203.386032 800.506564 217.29277 800.506564 217.29277c28.682646 72.1412 10.430053 126.029806 5.215026 139.067372 33.897672 36.505185 53.888607 83.440424 53.888607 140.805715 0 201.64769-122.553122 245.975415-239.891218 259.012982 19.121764 16.514251 35.636014 47.804409 35.636015 97.347161 0 70.402857-0.869171 126.898978-0.869172 144.282399 0 13.906737 9.560882 30.420988 35.636015 25.205961 208.601059-69.533686 358.967656-265.96635 358.967655-498.035028C1049.958663 234.676191 814.413301 0 524.979332 0z"/></svg>
+    </a>
+    
+    
+    
+    
+    
+    <a class="social-link" title="bilibili" href="https://space.bilibili.com/22378236" target="_blank" rel="noopener">
+        <svg viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M360.896 183.968l-90.912-88.096s-14.208-17.472 9.824-37.248c24.16-19.648 25.376-10.912 33.504-5.472s135.2 130.816 135.2 130.816zm301.952 3.264l90.912-88.096s14.208-17.472-9.824-37.248c-24.032-19.648-25.376-10.912-33.504-5.472s-135.2 130.816-135.2 130.816zM1004 350.336c-3.264-137.984-123.168-164.192-123.168-164.192s-614.336-4.96-742.496 0C10.176 222.304 20 350.336 20 350.336s1.696 274.272-.128 413.12c13.824 138.848 120.864 160.928 120.864 160.928s42.72.864 73.92.864c3.264 8.992 5.696 52.544 54.24 52.544 48.416 0 54.24-52.544 54.24-52.544s354.88-1.696 384.352-1.696c1.696 14.816 8.992 54.976 57.536 54.24 48.416-.864 51.712-57.536 51.712-57.536s16.384-1.696 65.664 0C997.344 898.88 1004 764.192 1004 764.192s-1.568-275.872 0-413.856zm-98.912 439.232c0 21.728-17.248 39.456-38.464 39.456H167.2c-21.248 0-38.464-17.6-38.464-39.456V326.336c0-21.728 17.248-39.456 38.464-39.456h699.424c21.248 0 38.464 17.6 38.464 39.456zM202.4 457.152l205.344-39.456 15.52 77.184-203.648 39.456zm638.976 0l-205.344-39.456-15.648 77.184 203.776 39.456zm-418.08 191.392s45.152 81.312 95.264-26.336c48.416 105.088 101.824 27.904 101.824 27.904l30.336 19.776s-56.672 91.136-131.424 22.208c-63.232 68.928-129.728-21.952-129.728-21.952z"/></svg>
+    </a>
+    
+    
+</div>
+    </div>
+</nav>
+    </div>
+</header>
+
+
+<div id="site-main" class="site-main outer" role="main">
+    <div class="inner">
+        <header class="post-full-header">
+            <div class="post-full-meta">
+                <time class="post-full-meta-date" datetime="2021-02-06T11:57:29.000Z">
+                    2021-02-06
+                </time>
+                
+                <span class="date-divider">/</span>
+                
+                <a href="/categories/LaTeX/">LaTeX</a>&nbsp;&nbsp;
+                
+                
+            </div>
+            <h1 class="post-full-title">Vscode配置LaTeX代码片段</h1>
+        </header>
+        <div class="post-full ">
+            
+            <figure class="post-full-image" style="background-image: url(https://s3.ax1x.com/2021/02/06/yYmvU1.png)">
+            </figure>
+            
+            <div class="post-full-content">
+                <article id="photoswipe" class="markdown-body">
+                    <h1 id="vscode配置latex代码片段"><a class="markdownIt-Anchor" href="#vscode配置latex代码片段"></a> Vscode配置LaTeX代码片段</h1>
+<p>在使用LaTeX书写论文时，每次从文件中复制代码段无疑是不优雅的，那么如何才能更加方便快捷地重复使用大段LaTeX代码呢？我们可以利用Vscode自带的<strong>用户片段</strong>功能。</p>
+<h2 id="用户片段功能在哪里"><a class="markdownIt-Anchor" href="#用户片段功能在哪里"></a> 用户片段功能在哪里？</h2>
+<p>在<code>文件</code>-&gt;<code>首选项</code>-&gt;<code>用户片段</code>里打<code>latex</code>，即可打开<code>latex.json</code>文件，在这里面就可以书写用户片段啦</p>
+<img alt="用户片段" style="zoom:50%;" class="post-img b-lazy" data-img="/2021/02/06/latex-snippests/用户片段.png" data-index="0" data-src="/2021/02/06/latex-snippests/用户片段.png">
+<h2 id="用户片段的基本格式"><a class="markdownIt-Anchor" href="#用户片段的基本格式"></a> 用户片段的基本格式</h2>
+<h3 id="基本格式"><a class="markdownIt-Anchor" href="#基本格式"></a> 基本格式</h3>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">"Print to console": &#123;</span><br><span class="line">	"prefix": "log",</span><br><span class="line">	"body": [</span><br><span class="line">		"console.log('$1');",</span><br><span class="line">		<span class="string">"$2"</span></span><br><span class="line">	],</span><br><span class="line">	"description": "Log output to console"</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>用户片段用json来书写，主要包括以下部分（主要来自参考文献3的翻译）：</p>
+<ul>
+<li>片段名称：即<code>Print to console。</code></li>
+<li>触发词（prefix）：我们可以通过prefix定义一个或多个显示代码段的触发词。即上文的<code>log。</code></li>
+<li>主体（body）：是一行或多行内容，在插入时将作为多行连接。将根据插入代码段的上下文对分隔符和嵌入选项卡进行格式化。也就是最后实际显示在编辑器中的内容。</li>
+<li>描述（description）：是对显示的代码段的可选说明。即<code>Log output to console</code>。</li>
+</ul>
+<h3 id="书写的注意点"><a class="markdownIt-Anchor" href="#书写的注意点"></a> 书写的注意点</h3>
+<ul>
+<li>
+<p>在使用到反斜杠时，需要写<code>\\</code>，最终在编辑器中显示为<code>\</code></p>
+</li>
+<li>
+<p><code>body</code>可以使用特殊构造来控制游标和要插入的文本</p>
+<ul>
+<li>**按下Tab键后停止的位置：**使用Tab键，我们能够让编辑器的光标在显示的代码段中移动。使用<code>Tab</code>指定光标位置。数字（如<code>$1</code>,<code>$2</code>）是将访问选项卡停止的顺序，而<code>$0</code>表示最终光标位置。如果有同一编号被使用多次将会同步链接更新。值得注意的是这个数字大于等于10也是可行的。</li>
+<li>**占位符：**复杂的代码片段会使用到占位符，占位符形如：<code>${1:xxx}</code>, <code>${2:xxx}</code>, …, 顺序按照数字顺次排列，每个占位符中的<code>xxx</code>为占位符的实例内容，结束位置的占位符为<code>$0</code>。</li>
+<li>**选择占位符：**占位符可以选择在给定的范围内选择值。语法是将值用<code>,</code>分隔枚举，与<code>|</code>一起括起来。例如 <code>${1|c,t,b|}</code>即表示在<code>1</code>位置，可以选择<code>c</code>,<code>b</code>,<code>t</code>三种选项，分别对应垂直居中（center），底部对齐（bottom）和顶部对齐（top）</li>
+<li>其他的操作都可以在<a href="https://code.visualstudio.com/docs/editor/userdefinedsnippets" target="_blank" rel="noopener">Vscode官网</a>上找到。</li>
+</ul>
+</li>
+</ul>
+<h2 id="latex-书写论文用户片段的基本案例"><a class="markdownIt-Anchor" href="#latex-书写论文用户片段的基本案例"></a> <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>LaTeX</mtext></mrow><annotation encoding="application/x-tex">\LaTeX</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.89883em;vertical-align:-0.2155em;"></span><span class="mord text"><span class="mord textrm">L</span><span class="mspace" style="margin-right:-0.36em;"></span><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.68333em;"><span style="top:-2.904999em;"><span class="pstrut" style="height:2.7em;"></span><span class="mord text"><span class="mord textrm sizing reset-size6 size3">A</span></span></span></span></span></span><span class="mspace" style="margin-right:-0.15em;"></span><span class="mord text"><span class="mord textrm">T</span><span class="mspace" style="margin-right:-0.1667em;"></span><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.46782999999999997em;"><span style="top:-2.7845em;"><span class="pstrut" style="height:3em;"></span><span class="mord text"><span class="mord textrm">E</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2155em;"><span></span></span></span></span><span class="mspace" style="margin-right:-0.125em;"></span><span class="mord textrm">X</span></span></span></span></span></span> 书写论文用户片段的基本案例</h2>
+<h3 id="latexjson文件"><a class="markdownIt-Anchor" href="#latexjson文件"></a> <code>latex.json</code>文件</h3>
+<p>下面给出的案例均来自于对<a href="https://levitate-qian.github.io/2020/08/30/latex-code/" target="_blank" rel="noopener">论文常用代码</a>的改写。主要包括</p>
+<ul>
+<li>单图：用<code>image</code>，<code>\image</code>呼出</li>
+<li>多图
+<ul>
+<li>子图格式：<code>images_sub</code>，<code>\images_sub</code></li>
+<li>全图格式：<code>images_minipage</code>，<code>\images_minipage</code></li>
+</ul>
+</li>
+<li>普通三线表：<code>table</code>，<code>tabular</code>，<code>\table_tabular</code></li>
+<li>代码
+<ul>
+<li>代码段：<code>code</code>，<code>\code</code></li>
+<li>代码文件：<code>codefile</code>，<code>\codefile</code></li>
+</ul>
+</li>
+</ul>
+<p>上述这些是我觉得比较实用的一些内容，所以就做成了用户片段，能帮助我们迅速完成图片、表格、代码等的插入。</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	<span class="comment">// Place your snippets for latex here. Each snippet is defined under a snippet name and has a prefix, body and </span></span><br><span class="line">	<span class="comment">// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:</span></span><br><span class="line">	<span class="comment">// $1, $2 for tab stops, $0 for the final cursor position, and $&#123;1:label&#125;, $&#123;2:another&#125; for placeholders. Placeholders with the </span></span><br><span class="line">	<span class="comment">// same ids are connected.</span></span><br><span class="line">	<span class="comment">// Example:</span></span><br><span class="line">	<span class="comment">// "Print to console": &#123;</span></span><br><span class="line">	<span class="comment">// 	"prefix": "log",</span></span><br><span class="line">	<span class="comment">// 	"body": [</span></span><br><span class="line">	<span class="comment">// 		"console.log('$1');",</span></span><br><span class="line">	<span class="comment">// 		"$2"</span></span><br><span class="line">	<span class="comment">// 	],</span></span><br><span class="line">	<span class="comment">// 	"description": "Log output to console"</span></span><br><span class="line">	<span class="comment">// &#125;</span></span><br><span class="line">	<span class="attr">"Image"</span>: &#123;</span><br><span class="line">		<span class="attr">"prefix"</span>: [</span><br><span class="line">			<span class="string">"image"</span>,</span><br><span class="line">			<span class="string">"\\image"</span></span><br><span class="line">		],</span><br><span class="line">		<span class="attr">"body"</span>: [</span><br><span class="line">			<span class="string">"\\begin&#123;figure&#125;[$&#123;5|htbp,H,h|&#125;]"</span>,</span><br><span class="line">			<span class="string">"    \\centering"</span>,</span><br><span class="line">			<span class="string">"    \\includegraphics[width=$1\\textwidth]&#123;$&#123;2:图片位置&#125;&#125;"</span>,</span><br><span class="line">			<span class="string">"    \\caption&#123;$&#123;3:图片标题&#125;&#125;"</span>,</span><br><span class="line">			<span class="string">"    \\label&#123;fig:$&#123;4:图片标签&#125;&#125;"</span>,</span><br><span class="line">			<span class="string">"\\end&#123;figure&#125;"</span>,</span><br><span class="line">			<span class="string">"$0"</span></span><br><span class="line">		],</span><br><span class="line">		<span class="attr">"description"</span>: <span class="string">"插入单图"</span></span><br><span class="line">	&#125;,</span><br><span class="line">	<span class="attr">"ImagesSub"</span>: &#123;</span><br><span class="line">		<span class="attr">"prefix"</span>: [</span><br><span class="line">			<span class="string">"images_sub"</span>,</span><br><span class="line">			<span class="string">"\\images_sub"</span></span><br><span class="line">		],</span><br><span class="line">		<span class="attr">"body"</span>: [</span><br><span class="line">			<span class="string">"\\begin&#123;figure&#125;[$&#123;11|htbp,H,h|&#125;]"</span>,</span><br><span class="line">			<span class="string">"    \\centering"</span>,</span><br><span class="line">			<span class="string">"    \\subfigure[$&#123;3:图片1标题&#125;]&#123;"</span>,</span><br><span class="line">			<span class="string">"    \\includegraphics[width=$1\\textwidth]&#123;$&#123;2:图片1位置&#125;&#125;"</span>,</span><br><span class="line">			<span class="string">"    \\label&#123;fig:$&#123;4:图片1标签&#125;&#125;&#125;"</span>,</span><br><span class="line">			<span class="string">"    \\subfigure[$&#123;7:图片2标题&#125;]&#123;"</span>,</span><br><span class="line">			<span class="string">"    \\includegraphics[width=$5\\textwidth]&#123;$&#123;6:图片2位置&#125;&#125;"</span>,</span><br><span class="line">			<span class="string">"    \\label&#123;fig:$&#123;8:图片2标签&#125;&#125;&#125;"</span>,</span><br><span class="line">			<span class="string">"    \\caption&#123;$&#123;9:总图片标题&#125;&#125;"</span>,</span><br><span class="line">			<span class="string">"    \\label&#123;fig:$&#123;10:总图片标签&#125;&#125;"</span>,</span><br><span class="line">			<span class="string">"\\end&#123;figure&#125;"</span>,</span><br><span class="line">			<span class="string">"$0"</span></span><br><span class="line">		],</span><br><span class="line">		<span class="attr">"description"</span>: <span class="string">"插入多图并列放置（子图格式）"</span></span><br><span class="line">	&#125;,</span><br><span class="line">	<span class="attr">"ImagesMini"</span>: &#123;</span><br><span class="line">		<span class="attr">"prefix"</span>: [</span><br><span class="line">			<span class="string">"images_minipage"</span>,</span><br><span class="line">			<span class="string">"\\images_minipage"</span></span><br><span class="line">		],</span><br><span class="line">		<span class="attr">"body"</span>: [</span><br><span class="line">			<span class="string">"\\begin&#123;figure&#125;[$&#123;13|htbp,H,h|&#125;]"</span>,</span><br><span class="line">			<span class="string">"    \\centering"</span>,</span><br><span class="line">			<span class="string">"    \\begin&#123;minipage&#125;[$&#123;1|c,t,b|&#125;]&#123;$2\\textwidth&#125; "</span>,</span><br><span class="line">			<span class="string">"         \\centering"</span>,</span><br><span class="line">			<span class="string">"         \\includegraphics[width=$3\\textwidth]&#123;$&#123;4:图片1位置&#125;&#125;"</span>,</span><br><span class="line">			<span class="string">"         \\caption&#123;$&#123;5:图片1标题&#125;&#125;"</span>,</span><br><span class="line">			<span class="string">"         \\label&#123;fig:$&#123;6:图片1标签&#125;&#125;"</span>,</span><br><span class="line">			<span class="string">"    \\end&#123;minipage&#125;"</span>,</span><br><span class="line">			<span class="string">"    \\begin&#123;minipage&#125;[$&#123;7|c,t,b|&#125;]&#123;$8\\textwidth&#125; "</span>,</span><br><span class="line">			<span class="string">"         \\centering"</span>,</span><br><span class="line">			<span class="string">"         \\includegraphics[width=$9\\textwidth]&#123;$&#123;10:图片2位置&#125;&#125;"</span>,</span><br><span class="line">			<span class="string">"         \\caption&#123;$&#123;11:图片2标题&#125;&#125;"</span>,</span><br><span class="line">			<span class="string">"         \\label&#123;fig:$&#123;12:图片2标签&#125;&#125;"</span>,</span><br><span class="line">			<span class="string">"    \\end&#123;minipage&#125;"</span>,</span><br><span class="line">			<span class="string">"\\end&#123;figure&#125;"</span>,</span><br><span class="line">			<span class="string">"$0"</span></span><br><span class="line">		],</span><br><span class="line">		<span class="attr">"description"</span>: <span class="string">"插入多图并列放置（全图格式）"</span></span><br><span class="line">	&#125;,</span><br><span class="line">	<span class="attr">"Table"</span>: &#123;</span><br><span class="line">		<span class="attr">"prefix"</span>: [</span><br><span class="line">            <span class="string">"table"</span>,</span><br><span class="line">            <span class="string">"tabular"</span>,</span><br><span class="line">			<span class="string">"\\table_tabular"</span></span><br><span class="line">		],</span><br><span class="line">		<span class="attr">"body"</span>: [</span><br><span class="line">			<span class="string">"\\begin&#123;table&#125;[$&#123;7|!htbp,H|&#125;]"</span>,</span><br><span class="line">			<span class="string">"    \\begin&#123;center&#125;"</span>,</span><br><span class="line">			<span class="string">"        \\caption&#123;$&#123;5:表格标题&#125;&#125;"</span>,</span><br><span class="line">            <span class="string">"        \\begin&#123;tabular&#125;[$&#123;1|c,t,b|&#125;]&#123;$&#123;2:列对齐&#125;&#125;"</span>,</span><br><span class="line">            <span class="string">"            \\toprule"</span>,</span><br><span class="line">            <span class="string">"            $3\\\\\\\\"</span>,</span><br><span class="line">            <span class="string">"            \\midrule"</span>,</span><br><span class="line">			<span class="string">"            $0"</span>,</span><br><span class="line">            <span class="string">"            \\bottomrule"</span>,</span><br><span class="line">            <span class="string">"        \\end&#123;tabular&#125;"</span>,</span><br><span class="line">			<span class="string">"        \\label&#123;tb:$&#123;6:表格标签&#125;&#125;"</span>,</span><br><span class="line">			<span class="string">"    \\end&#123;center&#125;"</span>,</span><br><span class="line">			<span class="string">"\\end&#123;table&#125;"</span>,</span><br><span class="line">		],</span><br><span class="line">		<span class="attr">"description"</span>: <span class="string">"插入传统三线表"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">"Code"</span>: &#123;</span><br><span class="line">		<span class="attr">"prefix"</span>: [</span><br><span class="line">            <span class="string">"code"</span>,</span><br><span class="line">			<span class="string">"\\code"</span></span><br><span class="line">		],</span><br><span class="line">		<span class="attr">"body"</span>: [</span><br><span class="line">			<span class="string">"\\begin&#123;lstlisting&#125;[language=$1,numbers=$&#123;2|none,left|&#125;]"</span>,</span><br><span class="line">			<span class="string">"    $0"</span>,</span><br><span class="line">			<span class="string">"\\end&#123;lstlisting&#125;"</span>,</span><br><span class="line">		],</span><br><span class="line">		<span class="attr">"description"</span>: <span class="string">"插入代码段落"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">"CodeFile"</span>: &#123;</span><br><span class="line">		<span class="attr">"prefix"</span>: [</span><br><span class="line">            <span class="string">"codefile"</span>,</span><br><span class="line">			<span class="string">"\\codefile"</span></span><br><span class="line">		],</span><br><span class="line">        <span class="attr">"body"</span>: [</span><br><span class="line">            <span class="string">"\\noindent\\textsc&#123;$&#123;1:来源章节&#125;&#125; - \\textbf&#123;$&#123;2:实际显示文件名&#125;&#125;"</span>,</span><br><span class="line">            <span class="string">"\\lstinputlisting[language=$3]&#123;./code/$0&#125;"</span></span><br><span class="line">		],</span><br><span class="line">		<span class="attr">"description"</span>: <span class="string">"插入代码文件"</span></span><br><span class="line">	&#125;,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="使用方式"><a class="markdownIt-Anchor" href="#使用方式"></a> 使用方式</h3>
+<ol>
+<li>
+<p>输入<strong>触发关键词</strong>，例如<code>image</code></p>
+<p><img alt="ex1" class="post-img b-lazy" data-img="/2021/02/06/latex-snippests/ex1.png" data-index="1" data-src="/2021/02/06/latex-snippests/ex1.png"></p>
+</li>
+<li>
+<p>利用<code>↑</code>，<code>↓</code>键选择对应的用户片段，按<code>Enter</code>键选中片段</p>
+<p><img alt="ex2" class="post-img b-lazy" data-img="/2021/02/06/latex-snippests/ex2.png" data-index="2" data-src="/2021/02/06/latex-snippests/ex2.png"></p>
+</li>
+<li>
+<p>在光标跳动位置输入正确的内容，按<code>Tab</code>键移动到下一个占位符处，再次输入，以此类推，直到写完所有内容。</p>
+<p><img alt="ex3" class="post-img b-lazy" data-img="/2021/02/06/latex-snippests/ex3.png" data-index="3" data-src="/2021/02/06/latex-snippests/ex3.png"></p>
+</li>
+</ol>
+<h2 id="参考文献"><a class="markdownIt-Anchor" href="#参考文献"></a> 参考文献</h2>
+<ol>
+<li>
+<p>VScode配置latex+代码片段让写作起飞. <a href="https://blog.csdn.net/cfunction/article/details/108591734" target="_blank" rel="noopener">https://blog.csdn.net/cfunction/article/details/108591734</a></p>
+</li>
+<li>
+<p>VSCode插件开发：LaTeX Snippets. <a href="https://hexo.gyrojeff.moe/2020/03/04/VSCode%E6%8F%92%E4%BB%B6%E5%BC%80%E5%8F%91%EF%BC%9ALaTeX-Snippets/" target="_blank" rel="noopener">https://hexo.gyrojeff.moe/2020/03/04/VSCode插件开发：LaTeX-Snippets/</a></p>
+</li>
+<li>
+<p>Snippets in Visual Studio Code. <a href="https://code.visualstudio.com/docs/editor/userdefinedsnippets" target="_blank" rel="noopener">https://code.visualstudio.com/docs/editor/userdefinedsnippets</a></p>
+</li>
+</ol>
+
+                </article>
+                <ul class="tags-postTags">
+                    
+                    <li>
+                        <a href="/tags/%E8%AE%BA%E6%96%87/" rel="tag"># 论文</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tags/Vscode/" rel="tag"># Vscode</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    
+    <nav id="gobottom" class="pagination">
+        
+        <a class="prev-post" title="【深度学习笔记（一）】神经网络与深度学习" href="/2021/03/26/DL-Coursera-1-Neural-Networks-and-Deep-Learning/">
+            ← 【深度学习笔记（一）】神经网络与深度学习
+        </a>
+        
+        <span class="prev-next-post">·</span>
+        
+        <a class="next-post" title="LaTeX模板分享" href="/2020/12/01/latex-lecture/">
+            LaTeX模板分享 →
+        </a>
+        
+    </nav>
+
+    
+    <div class="inner">
+        <div id="comment"></div>
+    </div>
+    
+</div>
+
+<div class="toc-bar">
+    <div class="toc-btn-bar">
+        <a href="#site-main" class="toc-btn">
+            <svg viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M793.024 710.272a32 32 0 1 0 45.952-44.544l-310.304-320a32 32 0 0 0-46.4 0.48l-297.696 320a32 32 0 0 0 46.848 43.584l274.752-295.328 286.848 295.808z"/></svg>
+        </a>
+        <div class="toc-btn toc-switch">
+            <svg class="toc-open" viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M779.776 480h-387.2a32 32 0 0 0 0 64h387.2a32 32 0 0 0 0-64M779.776 672h-387.2a32 32 0 0 0 0 64h387.2a32 32 0 0 0 0-64M256 288a32 32 0 1 0 0 64 32 32 0 0 0 0-64M392.576 352h387.2a32 32 0 0 0 0-64h-387.2a32 32 0 0 0 0 64M256 480a32 32 0 1 0 0 64 32 32 0 0 0 0-64M256 672a32 32 0 1 0 0 64 32 32 0 0 0 0-64"/></svg>
+            <svg class="toc-close hide" viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M512 960c-247.039484 0-448-200.960516-448-448S264.960516 64 512 64 960 264.960516 960 512 759.039484 960 512 960zM512 128.287273c-211.584464 0-383.712727 172.128262-383.712727 383.712727 0 211.551781 172.128262 383.712727 383.712727 383.712727 211.551781 0 383.712727-172.159226 383.712727-383.712727C895.712727 300.415536 723.551781 128.287273 512 128.287273z"/><path d="M557.05545 513.376159l138.367639-136.864185c12.576374-12.416396 12.672705-32.671738 0.25631-45.248112s-32.704421-12.672705-45.248112-0.25631l-138.560301 137.024163-136.447897-136.864185c-12.512727-12.512727-32.735385-12.576374-45.248112-0.063647-12.512727 12.480043-12.54369 32.735385-0.063647 45.248112l136.255235 136.671523-137.376804 135.904314c-12.576374 12.447359-12.672705 32.671738-0.25631 45.248112 6.271845 6.335493 14.496116 9.504099 22.751351 9.504099 8.12794 0 16.25588-3.103239 22.496761-9.247789l137.567746-136.064292 138.687596 139.136568c6.240882 6.271845 14.432469 9.407768 22.65674 9.407768 8.191587 0 16.352211-3.135923 22.591372-9.34412 12.512727-12.480043 12.54369-32.704421 0.063647-45.248112L557.05545 513.376159z"/></svg>
+        </div>
+        <a href="#gobottom" class="toc-btn">
+            <svg viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M231.424 346.208a32 32 0 0 0-46.848 43.584l297.696 320a32 32 0 0 0 46.4 0.48l310.304-320a32 32 0 1 0-45.952-44.544l-286.848 295.808-274.752-295.36z"/></svg>
+        </a>
+    </div>
+    <div class="toc-main">
+    
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#vscode配置latex代码片段"><span class="toc-text"> Vscode配置LaTeX代码片段</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#用户片段功能在哪里"><span class="toc-text"> 用户片段功能在哪里？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#用户片段的基本格式"><span class="toc-text"> 用户片段的基本格式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#基本格式"><span class="toc-text"> 基本格式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#书写的注意点"><span class="toc-text"> 书写的注意点</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#latex-书写论文用户片段的基本案例"><span class="toc-text"> LaTeX\LaTeXLATE​X 书写论文用户片段的基本案例</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#latexjson文件"><span class="toc-text"> latex.json文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#使用方式"><span class="toc-text"> 使用方式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考文献"><span class="toc-text"> 参考文献</span></a></li></ol></li></ol>
+    
+    </div>
+</div>
+
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+	</div>
+	
+
+
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+            
+            
+
+<article class="read-next-card" style="background-image: url(https://s1.ax1x.com/2020/08/09/a7ycNV.png)">
+  <header class="read-next-card-header">
+    <small class="read-next-card-header-sitetitle">&mdash; Levitate_ &mdash;</small>
+    <h3 class="read-next-card-header-title">最新文章</h3>
+  </header>
+  <div class="read-next-divider">
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+      <path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/>
+    </svg>
+  </div>
+  <div class="read-next-card-content">
+    <ul>
+      
+      
+      
+      <li>
+        <a href="/2021/05/07/DL-Coursera-4-Convolutional-Neural-Networks/">【深度学习笔记（四）】卷积神经网络</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2021/05/07/Wireless-Communications-Ch-7/">【无线通信学习笔记（五）】分集</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2021/05/05/Wireless-Communications-Ch-5-6/">【无线通信学习笔记（四）】数字调制及其性能</a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </ul>
+  </div>
+  <footer class="read-next-card-footer">
+    <a href="/archives">  MORE  → </a>
+  </footer>
+</article>
+
+            
+            
+            
+
+<article class="read-next-card" style="background-image: url(https://s1.ax1x.com/2020/08/09/a7ycNV.png)">
+    <header class="read-next-card-header tagcloud-card">
+        <h3 class="read-next-card-header-title">分类</h3>
+    </header>
+    <div class="read-next-card-content">
+        <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/LaTeX/">LaTeX</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/">人工智能</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AE%9E%E9%AA%8C/">实验</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%80%BB%E7%BB%93/">总结</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a></li></ul>
+    </div>
+</article>
+
+
+            
+            
+            
+
+<article class="read-next-card" style="background-image: url(https://s1.ax1x.com/2020/08/09/a7ycNV.png)">
+	<header class="read-next-card-header tagcloud-card">
+		<h3 class="read-next-card-header-title">标签云</h3>
+	</header>
+	<div class="read-next-card-content-ext">
+		<a href="/tags/AI/" style="font-size: 22px;">AI</a> <a href="/tags/MATLAB/" style="font-size: 16px;">MATLAB</a> <a href="/tags/Vscode/" style="font-size: 16px;">Vscode</a> <a href="/tags/iPad/" style="font-size: 14px;">iPad</a> <a href="/tags/%E4%BF%A1%E5%8F%B7/" style="font-size: 14px;">信号</a> <a href="/tags/%E5%B0%84%E9%A2%91/" style="font-size: 16px;">射频</a> <a href="/tags/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/" style="font-size: 22px;">数学建模</a> <a href="/tags/%E6%97%A0%E7%BA%BF%E9%80%9A%E4%BF%A1/" style="font-size: 22px;">无线通信</a> <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" style="font-size: 18px;">机器学习</a> <a href="/tags/%E6%A8%A1%E6%8B%9F%E7%94%B5%E5%AD%90%E6%8A%80%E6%9C%AF/" style="font-size: 16px;">模拟电子技术</a> <a href="/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" style="font-size: 20px;">深度学习</a> <a href="/tags/%E7%94%B5%E7%A3%81%E5%9C%BA%E4%B8%8E%E7%94%B5%E7%A3%81%E6%B3%A2/" style="font-size: 18px;">电磁场与电磁波</a> <a href="/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/" style="font-size: 16px;">神经网络</a> <a href="/tags/%E8%AE%BA%E6%96%87/" style="font-size: 24px;">论文</a> <a href="/tags/%E9%80%9A%E4%BF%A1%E5%8E%9F%E7%90%86/" style="font-size: 16px;">通信原理</a>
+	</div>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+	
+
+
+
+
+<div id="search" class="search-overlay">
+    <div class="search-form">
+        
+        <div class="search-overlay-logo">
+        	<img src="https://s1.ax1x.com/2020/08/09/a7yVTx.png" alt="Levitate_">
+        </div>
+        
+        <input id="local-search-input" class="search-input" type="text" name="search" placeholder="搜索 ...">
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="local-search-result"></div>
+</div>
+
+<footer class="site-footer outer">
+	<div class="site-footer-content inner">
+		<div class="copyright">
+			<a href="/" title="Levitate_">Levitate_ &copy; 2021</a>
+			
+				
+			        <span hidden="true" id="/2021/02/06/latex-snippests/" class="leancloud-visitors" data-flag-title="Vscode配置LaTeX代码片段">
+			            <span>阅读量 </span>
+			            <span class="leancloud-visitors-count">0</span>
+			        </span>
+	    		
+    		
+		</div>
+		<nav class="site-footer-nav">
+			
+			<a href="/atom.xml" title="RSS" target="_blank" rel="noopener">RSS</a>
+			
+			<a href="https://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a>
+			<a href="https://github.com/xzhih/hexo-theme-casper" title="Casper" target="_blank" rel="noopener">Casper</a>
+		</nav>
+	</div>
+</footer>
+	
+
+
+<script>
+    if(window.navigator && navigator.serviceWorker) {
+        navigator.serviceWorker.getRegistrations().then(function(registrations) {
+            for(let registration of registrations) {
+                registration.unregister()
+            }
+        })
+    }
+</script>
+
+
+<script id="scriptLoad" src="/js/allinone.min.js" async></script>
+
+
+
+<div class="floating-header">
+	<div class="floating-header-logo">
+        <a href="/" title="Levitate_">
+			
+                <img src="https://s1.ax1x.com/2020/08/09/a7yVTx.png" alt="Levitate_ icon">
+			
+            <span>Levitate_</span>
+        </a>
+    </div>
+    <span class="floating-header-divider">&mdash;</span>
+    <div class="floating-header-title">Vscode配置LaTeX代码片段</div>
+    <progress class="progress" value="0">
+        <div class="progress-container">
+            <span class="progress-bar"></span>
+        </div>
+    </progress>
+</div>
+
+
+
+
+<script>;(function() {var bLazy = new Blazy()})();</script>
+
+
+
+
+<script>
+    document.getElementById('scriptLoad').addEventListener('load', function () {
+        
+        
+            var bLazy = new Blazy();
+        
+
+        
+        
+
+        
+        
+        
+            searchFunc("/");
+        
+        
+    })
+</script>
+
+
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+
+
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+
+
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+
+
+
+<script id="valineScript" src="//unpkg.com/valine/dist/Valine.min.js" async></script>
+<script>
+    document.getElementById('valineScript').addEventListener("load", function() {
+        new Valine({
+            el: '#comment' ,
+            verify: false,
+            notify: false,
+            appId: 'lv1bzqDwJo9FTYdBip3QGP7t-gzGzoHsz',
+            appKey: 'mK4QC79PTUYTSginf9BXEzlv',
+            placeholder: '求轻喷(*/ω＼*)',
+            pageSize: 10,
+            avatar: 'retro',
+            visitor: true,
+            requiredFields: ['mail']
+        })
+    });
+</script>
+
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded',function(){
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        }
+        else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    });
+</script>
+
+
+</body>
+</html>
